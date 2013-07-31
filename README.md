@@ -23,6 +23,6 @@ If you're like to break your theme down further, or include other less files (mi
 
 ## 5. Build Customized Bootstrap
 
-From the project's root, run `grunt built` or simply just `grunt`.
+From the project's root, run `grunt build` or simply just `grunt`.
 
 Your custom Bootstrap build can be found in the `output` path.
