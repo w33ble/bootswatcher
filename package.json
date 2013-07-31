@@ -1,0 +1,34 @@
+{
+  "name": "swatchmaker",
+  "version": "2.3.2",
+  "description": "Create your own bootstrap swatch",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w33ble/bootswatcher"
+  },
+  "keywords": [
+    "bootstrap",
+    "bootswatch",
+    "bootswatcher",
+    "bootstrap",
+    "swatch"
+  ],
+  "author": "Joe Fleming",
+  "license": "Apache",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/w33ble/bootswatcher/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.1"
+  }
+}
