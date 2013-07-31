@@ -26,3 +26,7 @@ If you're like to break your theme down further, or include other less files (mi
 From the project's root, run `grunt build` or simply just `grunt`.
 
 Your custom Bootstrap build can be found in the `output` path.
+
+## 6. Bonus Watch Build
+
+If you are working on your theme and would like it to be rebuilt as you make changes, simply run `grunt watch` and leave the process open. Now, as you save your changes, a fresh copy of you custom Bootstrap will be save in `output`
