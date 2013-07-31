@@ -11,6 +11,14 @@ module.exports = (grunt) ->
         src: ['swatchmaker-responsive.less']
         dest: 'output/bootstrap-responsive.css'
 
+    cssmin:
+      bootstrap:
+        src: ['output/bootstrap.css']
+        dest: 'output/bootstrap.min.css'
+      'bootstrap-responsive':
+        src: ['output/bootstrap-responsive.css']
+        dest: 'output/bootstrap-responsive.min.css'
+
     watch:
       swatch:
         files: [
@@ -21,6 +29,7 @@ module.exports = (grunt) ->
         tasks: ['default']
 
   grunt.loadNpmTasks 'grunt-contrib-less'
+  grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-watch'
 
   grunt.registerTask 'default', [
@@ -30,4 +39,6 @@ module.exports = (grunt) ->
   grunt.registerTask 'build', [
     'less:bootstrap'
     'less:bootstrap-responsive'
+    'cssmin:bootstrap'
+    'cssmin:bootstrap-responsive'
   ]

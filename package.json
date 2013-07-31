@@ -29,6 +29,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.6.4",
-    "grunt-contrib-watch": "~0.5.1"
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-cssmin": "~0.6.1"
   }
 }
