@@ -1,6 +1,6 @@
 # Create your own swatch
 
-This is a tool used to geenrate a custom build of Twitter Bootstrap. It is basically a fork of [thomaspark/bootswatch](https://github.com/thomaspark/bootswatch), but ditches the Makefile and junk in favor of using bower and grunt. It also uses grunt for the watch process, instead of relying on ruby.
+This is a tool used to geenrate a custom build of Twitter Bootstrap. It is basically a fork of [thomaspark/bootswatch](https://github.com/thomaspark/bootswatch). However, instead of using a Makefile, this pulls down bootstrap with [Bower](http://bower.io) and build the package with [Grunt](http://gruntjs.com). This makes things cleaner I think, and also makes it cross-platform (yes, this is working in Windows).
 
 ## 1. Download Bootswatcher
 
