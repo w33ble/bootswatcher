@@ -24,7 +24,7 @@ From the project root, run `npm install` and `bower install`.
 
 Make your customizations to `swatch/variables.less` and `swatch/theme.less`. You can also copy over the less files from an existing [bootswatch theme](http://bootswatch.com/) and modify them, but the files will need to be named the same.
 
-If you're like to break your theme down further, or include other less files (mixins, for example), edit the `swatchmaker.less` and `swatchmaker-responsive.less` files in the project's root path. These are the files used to define custom swatches you are loading.
+If you're like to break your theme down further, or include other less files (mixins, for example), edit the `swatchmaker.less` file in the project's root path. This is the file used to define custom swatches you are loading.
 
 ### JS
 

@@ -7,17 +7,11 @@ module.exports = (grunt) ->
       bootstrap:
         src: ['swatchmaker.less']
         dest: 'output/bootstrap.css'
-      'bootstrap-responsive':
-        src: ['swatchmaker-responsive.less']
-        dest: 'output/bootstrap-responsive.css'
 
     cssmin:
       bootstrap:
         src: ['output/bootstrap.css']
         dest: 'output/bootstrap.min.css'
-      'bootstrap-responsive':
-        src: ['output/bootstrap-responsive.css']
-        dest: 'output/bootstrap-responsive.min.css'
 
     concat:
       bootstrapjs:
@@ -45,7 +39,6 @@ module.exports = (grunt) ->
     watch:
       swatch:
         files: [
-          'swatchmaker-responsive.less'
           'swatchmaker.less'
           'swatch/**/*.less'
           'Gruntfile'
@@ -64,9 +57,7 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'build', [
     'less:bootstrap'
-    'less:bootstrap-responsive'
     'cssmin:bootstrap'
-    'cssmin:bootstrap-responsive'
     'concat:bootstrapjs'
     'uglify:bootstrapjs'
   ]
