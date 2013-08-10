@@ -22,19 +22,18 @@ module.exports = (grunt) ->
     concat:
       bootstrapjs:
         src: [
-          'bower_components/bootstrap/docs/assets/js/bootstrap-transition.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-alert.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-modal.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-dropdown.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-scrollspy.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-tab.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-tooltip.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-popover.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-button.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-collapse.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-carousel.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-typeahead.js'
-          'bower_components/bootstrap/docs/assets/js/bootstrap-affix.js'
+          'bower_components/bootstrap/docs/assets/js/transition.js'
+          'bower_components/bootstrap/docs/assets/js/alert.js'
+          'bower_components/bootstrap/docs/assets/js/modal.js'
+          'bower_components/bootstrap/docs/assets/js/dropdown.js'
+          'bower_components/bootstrap/docs/assets/js/scrollspy.js'
+          'bower_components/bootstrap/docs/assets/js/tab.js'
+          'bower_components/bootstrap/docs/assets/js/tooltip.js'
+          'bower_components/bootstrap/docs/assets/js/popover.js'
+          'bower_components/bootstrap/docs/assets/js/button.js'
+          'bower_components/bootstrap/docs/assets/js/collapse.js'
+          'bower_components/bootstrap/docs/assets/js/carousel.js'
+          'bower_components/bootstrap/docs/assets/js/affix.js'
         ]
         dest: 'output/bootstrap.js'
 
