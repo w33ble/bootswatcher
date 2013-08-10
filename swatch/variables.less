@@ -1,4 +1,4 @@
-// Flatly 3.0.0
+// Cerulean 3.0.0
 // Variables
 // --------------------------------------------------
 
@@ -10,41 +10,41 @@
 // -------------------------
 
 @gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              #7b8a8b;
-@gray:                   #95a5a6;
-@gray-light:             #b4bcc2;
-@gray-lighter:           #ecf0f1;
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
 
 // Brand colors
 // -------------------------
 
-@brand-primary:         #2C3E50;
-@brand-success:         #18BC9C;
-@brand-warning:         #F39C12;
-@brand-danger:          #E74C3C;
-@brand-info:            #3498DB;
+@brand-primary:         #2FA4E7;
+@brand-success:         #73A839;
+@brand-warning:         #DD5600;
+@brand-danger:          #C71C22;
+@brand-info:            #033C73;
 
 // Scaffolding
 // -------------------------
 
 @body-bg:               #fff;
-@text-color:            @brand-primary;
+@text-color:            @gray;
 
 // Links
 // -------------------------
 
-@link-color:            @brand-success;
-@link-hover-color:      @link-color;
+@link-color:            @brand-primary;
+@link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          15px;
+@font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
@@ -60,14 +60,14 @@
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-@padding-base-vertical:          10px;
-@padding-base-horizontal:        15px;
+@padding-base-vertical:          8px;
+@padding-base-horizontal:        12px;
 
-@padding-large-vertical:         18px;
-@padding-large-horizontal:       27px;
+@padding-large-vertical:         14px;
+@padding-large-horizontal:       16px;
 
-@padding-small-vertical:         6px;
-@padding-small-horizontal:       9px;
+@padding-small-vertical:         5px;
+@padding-small-horizontal:       10px;
 
 @border-radius-base:             4px;
 @border-radius-large:            6px;
@@ -93,31 +93,31 @@
 // Buttons
 // -------------------------
 
-@btn-default-color:              #fff;
-@btn-default-bg:                 @gray;
-@btn-default-border:             @btn-default-bg;
+@btn-default-color:              @text-color;
+@btn-default-bg:                 #fff;
+@btn-default-border:             rgba(0, 0, 0, 0.1);
 
-@btn-primary-color:              @btn-default-color;
+@btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @btn-primary-bg;
 
-@btn-success-color:              @btn-default-color;
+@btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
 @btn-success-border:             @btn-success-bg;
 
-@btn-warning-color:              @btn-default-color;
+@btn-warning-color:              #fff;
 @btn-warning-bg:                 @brand-warning;
 @btn-warning-border:             @btn-warning-bg;
 
-@btn-danger-color:               @btn-default-color;
+@btn-danger-color:               #fff;
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              @btn-danger-bg;
 
-@btn-info-color:                 @btn-default-color;
+@btn-info-color:                 #fff;
 @btn-info-bg:                    @brand-info;
 @btn-info-border:                @btn-info-bg;
 
-@btn-hover-color:                @btn-default-color;
+@btn-hover-color:                #fff;
 
 
 // Forms
@@ -155,7 +155,7 @@
 @dropdown-link-hover-color:      #fff;
 @dropdown-link-hover-bg:         @dropdown-link-active-bg;
 
-@dropdown-caret-color:           #000;
+@dropdown-caret-color:           #fff;
 
 
 // COMPONENT VARIABLES
@@ -179,7 +179,7 @@
 // -------------------------
 
 // Basics of a navbar
-@navbar-height:                    60px;
+@navbar-height:                    50px;
 @navbar-color:                     #777;
 @navbar-bg:                        @brand-primary;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);  // ~15px
@@ -187,8 +187,8 @@
 
 // Navbar links
 @navbar-link-color:                #fff;
-@navbar-link-hover-color:          @brand-success;
-@navbar-link-hover-bg:             transparent;
+@navbar-link-hover-color:          #fff;
+@navbar-link-hover-bg:             darken(@navbar-bg, 10%);
 @navbar-link-active-color:         #fff;
 @navbar-link-active-bg:            darken(@navbar-bg, 10%);
 @navbar-link-disabled-color:       #ccc;
@@ -196,8 +196,8 @@
 
 // Navbar brand label
 @navbar-brand-color:               @navbar-link-color;
-@navbar-brand-hover-color:         @navbar-link-hover-color;
-@navbar-brand-hover-bg:            transparent;
+@navbar-brand-hover-color:         #fff;
+@navbar-brand-hover-bg:            @navbar-link-hover-bg;
 
 // Navbar toggle
 @navbar-toggle-hover-bg:           #ddd;
@@ -209,21 +209,21 @@
 //
 // Reset inverted navbar basics
 @navbar-inverse-color:                      #fff;
-@navbar-inverse-bg:                         @brand-success;
+@navbar-inverse-bg:                         @brand-info;
 
 // Inverted navbar links
 @navbar-inverse-link-color:                 #fff;
-@navbar-inverse-link-hover-color:           @brand-primary;
-@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-active-color:          #fff;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 5%);
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-disabled-color:        #ccc;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-brand-hover-bg:             transparent;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             @navbar-inverse-link-hover-bg;
 
 // Inverted navbar search
 // Normal navbar needs no special styles or vars
@@ -269,17 +269,17 @@
 // Pagination
 // -------------------------
 
-@pagination-bg:                        @brand-success;
-@pagination-border:                    transparent;
-@pagination-active-bg:                 darken(@brand-success, 15%);
-@pagination-active-color:              #fff;
-@pagination-disabled-color:            @gray-lighter;
+@pagination-bg:                        #fff;
+@pagination-border:                    #ddd;
+@pagination-active-bg:                 #f5f5f5;
+@pagination-active-color:              @gray-light;
+@pagination-disabled-color:            @gray-light;
 
 // Pager
 // -------------------------
 
 @pager-border-radius:                  15px;
-@pager-disabled-color:                 #fff;
+@pager-disabled-color:                 @gray-light;
 
 
 // Jumbotron
@@ -293,21 +293,21 @@
 // Form states and alerts
 // -------------------------
 
-@state-warning-text:             #fff;
-@state-warning-bg:               @brand-warning;
-@state-warning-border:           @brand-warning;
+@state-warning-text:             #c09853;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
 
-@state-danger-text:              #fff;
-@state-danger-bg:                @brand-danger;
-@state-danger-border:            @brand-danger;
+@state-danger-text:              #b94a48;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
 
-@state-success-text:             #fff;
-@state-success-bg:               @brand-success;
-@state-success-border:           @brand-success;
+@state-success-text:             #468847;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
-@state-info-text:                #fff;
-@state-info-bg:                  @brand-info;
-@state-info-border:              @brand-info;
+@state-info-text:                #3a87ad;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 
 // Tooltips
@@ -386,7 +386,7 @@
 
 // Progress bars
 // -------------------------
-@progress-bg:                 @gray-lighter;
+@progress-bg:                 #f5f5f5;
 @progress-bar-color:          #fff;
 
 @progress-bar-bg:             @brand-primary;
@@ -463,7 +463,7 @@
 @badge-color:                 #fff;
 @badge-link-hover-color:      #fff;
 
-@badge-bg:                    @gray;
+@badge-bg:                    @gray-light;
 @badge-active-color:          @link-color;
 @badge-active-bg:             #fff;
 
@@ -472,7 +472,7 @@
 // -------------------------
 @breadcrumb-bg:               #f5f5f5;
 @breadcrumb-color:            #ccc;
-@breadcrumb-active-color:     @gray;
+@breadcrumb-active-color:     @gray-light;
 
 
 // Carousel

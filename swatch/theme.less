@@ -1,133 +1,146 @@
-// Flatly 3.0.0
+// Cerulean 3.0.0
 // Bootswatch
 // -----------------------------------------------------
 
-@import url("//fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+.btn-shadow(@color) {
+	#gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+	border-bottom: 1px solid darken(@color, 10%);
+}
 
 // Navbar =====================================================================
 
+.navbar {
+	.btn-shadow(@navbar-bg);
+	.box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+
+	.navbar-nav > li > a,
+	&-brand {
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.navbar-inverse {
+	#gradient > .vertical-three-colors(lighten(@navbar-inverse-bg, 8%), @navbar-inverse-bg, 60%, darken(@navbar-inverse-bg, 4%));
+	border-bottom: 1px solid darken(@navbar-inverse-bg, 10%);
+}
+
 // Buttons ====================================================================
+
+.btn {
+
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+	.caret {
+		border-top-color: #fff;
+	}
+}
+
+.btn-default {
+	
+	.btn-shadow(@btn-default-bg);
+
+	&:hover {
+		color: @btn-default-color;
+	}
+
+	.caret {
+		border-top-color: @text-color;
+	}
+}
+
+.btn-default {
+	.btn-shadow(@btn-default-bg);
+}
+
+.btn-primary {
+	.btn-shadow(@btn-primary-bg);
+}
+
+.btn-success {
+	.btn-shadow(@btn-success-bg);
+}
+
+.btn-info {
+	.btn-shadow(@btn-info-bg);
+}
+
+.btn-warning {
+	.btn-shadow(@btn-warning-bg);
+}
+
+.btn-danger {
+	.btn-shadow(@btn-danger-bg);
+}
 
 // Typography =================================================================
 
-.text-primary {
-	color: @brand-primary;
-}
-
-.text-success {
-	color: @brand-success;
-}
-
-.text-danger {
-	color: @brand-danger;
-}
-
-.text-warning {
-	color: @brand-warning;
-}
-
-.text-info {
-	color: @brand-info;
+h1, h2, h3, h4, h5, h6 {
+	color: #317EAC;
 }
 
 // Tables =====================================================================
 
-.table {
-
-	tr.success,
-	tr.warning,
-	tr.danger {
-		color: #fff;
-	}
-}
-
 // Forms ======================================================================
-
-.has-warning {
-	.help-block,
-	.control-label {
-		color: @brand-warning;
-	}
-
-	.form-control,
-	.form-control:focus {
-		border: 2px solid @brand-warning;
-	}
-}
-
-.has-error {
-	.help-block,
-	.control-label {
-		color: @brand-danger;
-	}
-
-	.form-control,
-	.form-control:focus {
-		border: 2px solid @brand-danger;
-	}
-}
-
-.has-success {
-	.help-block,
-	.control-label {
-		color: @brand-success;
-	}
-
-	.form-control,
-	.form-control:focus {
-		border: 2px solid @brand-success;
-	}
-}
 
 // Navs =======================================================================
 
-.pagination {
-
-	a {
-		color: #fff;
-	}
-
-	.disabled {
-		&>a,
-		&>a:hover,
-		&>a:focus,
-		&>span {
-			background-color: lighten(@brand-success, 15%);
-		}
-	}
-}
-
-.pager {
-	a {
-		color: #fff;
-	}
-
-	.disabled {
-		&>a,
-		&>a:hover,
-		&>a:focus,
-		&>span {
-			background-color: lighten(@brand-success, 15%);
-		}
-	}
-}
-
 // Indicators =================================================================
-
-.alert {
-
-	a,
-	.alert-link {
-		color: #fff;
-		text-decoration: underline;
-	}
-}
 
 // Progress bars ==============================================================
 
-.progress {
-	height: 10px;
-	.box-shadow(none);
+// Containers =================================================================
+
+.panel-primary {
+
+	.panel-title {
+		color: #fff;
+	}
 }
 
-// Containers =================================================================
+.panel-success {
+
+	.panel-heading {
+		background-color: @brand-success;
+		color: #fff;
+	}
+	
+	.panel-title {
+		color: #fff;
+	}
+}
+
+.panel-warning {
+
+	.panel-heading {
+		background-color: @brand-warning;
+		color: #fff;
+	}
+
+	.panel-title {
+		color: #fff;
+	}
+}
+
+.panel-danger {
+
+	.panel-heading {
+		background-color: @brand-danger;
+		color: #fff;
+	}
+	
+	.panel-title {
+		color: #fff;
+	}
+}
+
+.panel-info {
+
+	.panel-heading {
+		background-color: @brand-info;
+		color: #fff;
+	}
+
+	.panel-title {
+		color: #fff;
+	}
+}
