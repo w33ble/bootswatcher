@@ -2,31 +2,40 @@
 
 This is a tool used to geenrate a custom build of Twitter Bootstrap. It is basically a fork of [thomaspark/bootswatch](https://github.com/thomaspark/bootswatch). However, instead of using a Makefile, this pulls down bootstrap with [Bower](http://bower.io) and build the package with [Grunt](http://gruntjs.com). This makes things cleaner I think, and also makes it cross-platform (yes, this is working in Windows).
 
-## 1. Download Bootswatcher
+# How to use this
+
+Follow these steps to build your own custom Bootstrap build.
+
+## Requirements
+
+You'll need to have node, npm, grunt and bower installed. Install [Node](http://nodejs.org), then run `npm install -g grunt-cli bower`
+
+## Download Bootswatcher
 
 [Download](https://github.com/w33ble/bootswatcher/archive/master.zip) or clone Bootswatcher
 
+## Install Bootswatcher Dependencies
 
-## 2. Install Dependencies
+From the project root, run `npm install` and `bower install`.
 
-You'll need to have node, npm, grunt and bower installed. If you already have node and npm installed, simply run `npm install -g grunt-cli bower`
+## Customize Bootstrap
 
-## 3. Install Bootswatcher Dependencies
+### CSS
 
-From the project root, run `npm install`. This will also run `bower install` for you, which will install a copy of Twitter Bootstrap that Bootswatcher will be working with.
-
-## 4. Customize Bootstrap
-
-Make your customizations to the two files found in `swatch`: `variables.less` and `swatch.less`. You can also copy over the less files from an existing theme and modify them, but they will need to be named the same.
+Make your customizations to `swatch/variables.less` and `swatch/theme.less`. You can also copy over the less files from an existing [bootswatch theme](http://bootswatch.com/) and modify them, but the files will need to be named the same.
 
 If you're like to break your theme down further, or include other less files (mixins, for example), edit the `swatchmaker.less` and `swatchmaker-responsive.less` files in the project's root path. These are the files used to define custom swatches you are loading.
 
-## 5. Build Customized Bootstrap
+### JS
 
-From the project's root, run `grunt build` or simply just `grunt`.
+The Javascript build happens via Grunt. Open `Gruntfile.coffee` and comment out or remove the scripts you don't need, or add any new ones you want to include. You only need to change the files under the `concat` rule.
 
-Your custom Bootstrap build can be found in the `output` path.
+## Build Customized Bootstrap
 
-## 6. Bonus Watch Build
+From the project's root, run `grunt` or `grunt build`. Your custom Bootstrap files can be found in the `output` path.
+
+To preview your changes, open `test/test.html` in your browser.
+
+## Watch Process
 
 If you are working on your theme and would like it to be rebuilt as you make changes, simply run `grunt watch` and leave the process open. Now, as you save your changes, a fresh copy of you custom Bootstrap will be save in `output`
