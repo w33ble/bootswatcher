@@ -34,7 +34,7 @@ The Javascript build happens via Grunt. Open `Gruntfile.coffee` and comment out 
 
 From the project's root, run `grunt` or `grunt build`. Your custom Bootstrap files can be found in the `output` path.
 
-To preview your changes, open `test/test.html` in your browser.
+To preview your changes, open `test/index.html` in your browser.
 
 ## Watch Process
 
