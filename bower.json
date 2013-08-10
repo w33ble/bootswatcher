@@ -1,6 +1,6 @@
 {
   "name": "swatchmaker",
-  "version": "2.3.2",
+  "version": "3.0.0-rc1",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -9,6 +9,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "2.3.2"
+    "bootstrap": "3.0.0-rc1"
   }
 }
