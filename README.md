@@ -39,3 +39,6 @@ To preview your changes, open `test/index.html` in your browser.
 ## Watch Process
 
 If you are working on your theme and would like it to be rebuilt as you make changes, simply run `grunt watch` and leave the process open. Now, as you save your changes, a fresh copy of you custom Bootstrap will be save in `output`
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/w33ble/bootswatcher/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
